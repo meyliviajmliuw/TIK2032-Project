@@ -1,0 +1,191 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    letter-spacing: 5px;
+    text-align: center;
+    font-size: 32px;
+  }
+  
+  /* Navbar */
+  nav {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 14px 20px;
+    border-bottom: 1px solid #ccc;
+    z-index: 1000;
+    font-size: 18px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+  }
+  
+  nav a:hover {
+    background-color: whitesmoke;
+  }
+  
+  /* Header / Hero Section */
+  header {
+    position: relative;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    scroll-margin-bottom: 0px;
+  }
+  
+  .image-container {
+    position: relative;
+    width: 90%;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom-right-radius: 3%;
+    border-bottom-left-radius: 3%;
+  }
+  
+  .image-container h1 {
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+    font-size: 48px;
+    color: white;
+    background: none;
+    padding: 0; 
+  }
+  /* Section Styling */
+  section {
+    max-width: 85%;
+    margin: 60px auto;
+    padding: 0 20px;
+  }
+  
+/* Galeri Section */
+
+#galeri {
+  background-color: whitesmoke;
+  padding:16px;
+  border-radius: 3%;
+  scroll-margin-top: 80px;
+}
+
+#galeri table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  
+  #galeri td {
+    width: 25%; 
+    padding: 10px;
+  }
+  
+  #galeri img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    #galeri td {
+      display:grid;
+      width: 100%; 
+    }
+  }
+  
+
+  /* Blog Section */
+  #blog {
+    background-color: whitesmoke;
+    padding: 16px;
+    border-radius: 3%;
+    scroll-margin-top: 80px;
+  }
+
+  #blog table {
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  #blog td {
+    padding: 20px;
+    vertical-align: top;
+  }
+  
+  #blog h3 {
+    margin-top: 0;
+    text-align: left;
+    font-size: 24px;
+    font-style: italic;
+  }
+  
+  #blog p {
+    text-align: justify;
+  }
+
+
+  @media (max-width: 768px) {
+    #blog table,
+    #blog tr,
+    #blog td {
+      display: block;
+      width: 100%;
+      box-sizing: border-box; 
+      padding: 10px;
+    }
+  }
+  
+  
+  #kontak {
+    margin-bottom: 0; 
+  }
+
+  #kontak h3 {
+    text-align: left;
+  }
+  
+  footer {
+    margin-top: 0;
+    padding: 10px;
+    background-color: grey;
+    padding-left: 150px;
+  }
+  
+  #scrollTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 999;
+    font-size: 24px;
+    border: none;
+    outline: none;
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+    padding: 24px 32px;
+    border-radius: 50%;
+    transition: opacity 0.3s ease;
+  }
+  
+  #scrollTopBtn:hover {
+    background-color: #333;
+  }

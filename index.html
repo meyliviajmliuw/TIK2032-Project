@@ -3,34 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <title>TIK2032</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
   <!-- Bar Navigasi -->
-  <div>
+  <nav>
     <a href="#beranda">Beranda</a>
     <a href="#galeri">Galeri</a>
     <a href="#blog">Blog</a>
     <a href="#kontak">Kontak</a>
-  </div>
+  </nav>
 
   <!-- Beranda -->
   <header id="beranda">
-    <img src="img/foto_utama.jpeg" alt="Foto Utama Beranda" width="800">
-    <h1>Beranda</h1>
+    <div class="image-container">
+      <img src="img/foto_utama.jpeg" alt="Header Image">
+      <h1>HOME</h1>
+    </div>
   </header>
-
-  <!-- Galeri -->
+  
   <section id="galeri">
     <h1>Galeri</h1>
     <table border="0" cellspacing="0" cellpadding="5">
       <tr>
-        <td><img src="img/foto_g1.jpeg" alt="Galeri Image 1" width="300" height="300"></td>
-        <td><img src="img/foto_g2.jpeg" alt="Galeri Image 2" width="300" height="300"></td>
+        <td><img src="img/foto_op1.jpeg" alt="Galeri Image 1" width="300" height="300"></td>
+        <td><img src="img/foto_h1.jpeg" alt="Galeri Image 2" width="300" height="1"></td>
+        <td><img src="img/foto_n1.jpeg" alt="Galeri Image 3" width="300" height="300"></td>
+        <td><img src="img/foto_bc1.jpeg" alt="Galeri Image 4" width="300" height="300"></td>
       </tr>
       <tr>
-        <td><img src="img/foto_g3.jpeg" alt="Galeri Image 3" width="300" height="300"></td>
-        <td><img src="img/foto_g4.jpeg" alt="Galeri Image 4" width="300" height="300"></td>
+        <td><img src="img/foto_op2.jpeg" alt="Galeri Image 5" width="300" height="300"></td>
+        <td><img src="img/foto_h2.jpeg" alt="Galeri Image 6" width="300" height="300"></td>
+        <td><img src="img/foto_n2.jpeg" alt="Galeri Image 7" width="300" height="300"></td>
+        <td><img src="img/foto_bc2.jpeg" alt="Galeri Image 8" width="300" height="300"></td>
       </tr>
     </table>
   </section>
@@ -68,12 +74,14 @@
     </table>
   </section>
 
+  
+
   <!-- Kontak Section -->
   <section id="kontak">
-    <h1>Kontak</h1>
+    <hr><h3>Kontak</h3>
     <p>Sam Ratulangi, 350423 Manado, Indonesia</p>
-    <p>Telepon: 082123123</p>
-    <p>Email: <a href="mailto:test@test.com">test@test.com</a></p>
+    <p>Telepon: <b>082123123</b></p>
+    <p>Email: <a href="mailto:test@test.com"><b>test@test.com</b></a></p>
   </section>
 
   <!-- Footer -->
@@ -81,5 +89,27 @@
     <p> Disponsori oleh <a href="https://www.unsrat.ac.id/" target="_blank">Unsrat</a></p>
   </footer>
 
+  <button onclick="scrollToTop()" id="scrollTopBtn" title="Kembali ke atas">⬆</button>
+  <script>
+    const scrollBtn = document.getElementById("scrollTopBtn");
+  
+
+    window.onscroll = function () {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        scrollBtn.style.display = "block";
+      } else {
+        scrollBtn.style.display = "none";
+      }
+    };
+  
+
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    }
+  </script>
+  
 </body>
 </html>

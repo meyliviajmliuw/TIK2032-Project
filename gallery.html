@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Galeri</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    #galeri img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px; /* Rounded border */
+      transition: transform 0.3s ease;
+    }
+
+    #galeri img:hover {
+      transform: scale(1.03); /* Optional efek hover */
+    }
+
+    #galeri td {
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar konsisten -->
+  <nav>
+    <a href="index.php">Beranda</a>
+    <a href="gallery.html">Galeri</a>
+    <a href="blog.php">Blog</a>
+    <a href="contact.html">Kontak</a>
+  </nav>
+
+  <!-- Galeri Section -->
+  <section id="galeri">
+    <h1>Galeri</h1>
+    <table border="0" cellspacing="0" cellpadding="5">
+      <tr>
+        <td><img src="img/foto_op1.jpeg" alt="Galeri 1"></td>
+        <td><img src="img/foto_h1.jpeg" alt="Galeri 2"></td>
+        <td><img src="img/foto_n1.jpeg" alt="Galeri 3"></td>
+        <td><img src="img/foto_bc1.jpeg" alt="Galeri 4"></td>
+      </tr>
+      <tr>
+        <td><img src="img/foto_op2.jpeg" alt="Galeri 5"></td>
+        <td><img src="img/foto_h2.jpeg" alt="Galeri 6"></td>
+        <td><img src="img/foto_n2.jpeg" alt="Galeri 7"></td>
+        <td><img src="img/foto_bc2.jpeg" alt="Galeri 8"></td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Dibuat oleh Unsrat Student.</p>
+  </footer>
+
+  <button onclick="scrollToTop()" id="scrollTopBtn" title="Kembali ke atas">⬆</button>
+  <script>
+    const scrollBtn = document.getElementById("scrollTopBtn");
+    window.onscroll = function () {
+      scrollBtn.style.display = (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) ? "block" : "none";
+    };
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  </script>
+
+</body>
+</html>

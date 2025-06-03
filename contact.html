@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kontak</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <a href="index.php">Beranda</a>
+    <a href="gallery.html">Galeri</a>
+    <a href="blog.php">Blog</a>
+    <a href="contact.html">Kontak</a>
+  </nav>
+
+  <!-- Kontak Section -->
+  <section id="kontak">
+    <div class="contact-container">
+      <h1 class="contact-header">Hubungi Kami</h1>
+
+      <div class="contact-grid">
+        <div class="contact-item">
+          <span>📍 Alamat:</span>
+          Sam Ratulangi, 350423 Manado, Indonesia
+        </div>
+        <div class="contact-item">
+          <span>☎️ Telepon:</span>
+          082123123
+        </div>
+        <div class="contact-item">
+          <span>📧 Email:</span>
+          <a href="mailto:meylivialiuw026@student.unsrat.ac.id">meylivialiuw026@student.unsrat.ac.id</a>
+        </div>
+        <div class="contact-item">
+          <span>📷 Instagram:</span>
+          <a href="https://instagram.com/unsrat" target="_blank">@unsrat</a>
+        </div>
+        <div class="contact-item">
+          <span>🌐 Website:</span>
+          <a href="https://www.unsrat.ac.id/" target="_blank">www.unsrat.ac.id</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Dibuat oleh <a href="https://www.unsrat.ac.id/" target="_blank">Unsrat Student</a></p>
+  </footer>
+
+  <!-- Scroll Button -->
+  <button onclick="scrollToTop()" id="scrollTopBtn" title="Kembali ke atas">⬆</button>
+  <script>
+    const scrollBtn = document.getElementById("scrollTopBtn");
+    window.onscroll = function () {
+      scrollBtn.style.display = (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) ? "block" : "none";
+    };
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  </script>
+
+</body>
+</html>
